@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=Orbitron&family=Rubik+Microbe&family=Rubik+Pixels&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap');
+html {
+    box-sizing: border-box;
+    font-size: 10px;
+    background: #88eae8;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Rubik Pixels', cursive;
+  }
+#time , #timer{
+  font-family: 'Amatic SC', cursive;
+  font-weight: 500;
+}
+
+  
+  button{
+    position: absolute;
+    left: 45%;
+    top: 87%;
+    width: 100px;
+    font-size: 23px;
+    padding: 10px 0;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: white;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    letter-spacing: 4px;
+  }
+  button:hover{
+    background-color: aquamarine;
+  }
+  h1 {
+    margin-top: 4px;
+    text-align: center;
+    font-size: 10rem;
+    line-height: 1;
+    margin-bottom: 0;
+  }
+  
+  .score {
+    background: rgba(255,255,255,0.2);
+    padding: 0 3rem;
+    line-height: 1;
+    border-radius: 1rem;
+  }
+  
+  .game {
+    width: 550px;
+    height: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+  
+  .hole {
+    flex: 1 0 33.33%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .hole:after {
+    display: block;
+    background: url(dirt.png) bottom center no-repeat;
+    background-size: contain;
+    content: '';
+    width: 100%;
+    height:70px;
+    position: absolute;
+    z-index: 2;
+    bottom: -30px;
+  }
+  
+  .mole {
+    background: url('mole.png') bottom center no-repeat;
+    background-size: 60%;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    transition:all 0.4s;
+  }
+  
+  .hole.up .mole {
+    top: 0;
+  }
+
+  .container
+{
+    text-align: center;
+    justify-content: center;
+}
+.container p{
+    font-size: 3rem;
+
+}
